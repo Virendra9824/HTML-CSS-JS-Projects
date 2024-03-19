@@ -1,0 +1,32 @@
+.mid-right
+{
+    padding-left: 25px;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.mid-right h2{
+    color: #003c66;
+    margin-bottom: 18px;
+}
+
+.mid-portfoilio
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.port-box1{
+    width: 30%;
+    height: 200px;
+    border: 1px rgb(9, 9, 9) solid;
+}
+
+.port-box11{
+    margin-top: 130px;
+}
+
+.port-box-cont{
+    text-align: center;
+}

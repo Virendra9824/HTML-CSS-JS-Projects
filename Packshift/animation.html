@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truck-Animation</title>
+    <style>
+
+        .container
+        {
+            outline: auto;
+            margin-top: 10%;
+        }
+        
+        .truck
+        {
+            /* border: 1px solid red; */
+            animation: truck 8s 0s infinite linear;
+            position: fixed;
+            /* left: -; */
+        }
+
+
+        .wheels
+        {
+            margin-top: -8px;
+        }
+
+        .wheels img
+        {
+            margin-top: -40px;
+            /* border: 2px red solid; */
+            animation: truckWheels 3s 0s infinite linear;
+        }
+
+        .wheels img:nth-child(2)
+        {
+            margin-left: 50px;
+        }
+
+        .wheels img:nth-child(1)
+        {
+            margin-left: 17px;
+        }
+
+        @keyframes truckWheels {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes truck {
+            0%{
+                left: -200px;
+            }
+            100%{
+                left: 100%;
+            }
+        }
+
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="truck">
+            <img src="images/truck-1.png" alt="">
+            <div class="wheels">
+                <img src="images/wheel-2 (1).png" alt="">
+                <img src="images/wheel-2 (1).png" alt="">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

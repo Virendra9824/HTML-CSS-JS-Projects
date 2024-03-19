@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+
+    <style>
+        body {
+            background: #000;
+        }
+
+        .main {
+            width: 500px;
+            height: 300px;
+            margin: auto;
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 200px;
+        }
+
+        input {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="item"><input type="button" name="" value="Play" onclick="On()" id="Play"></div>
+        <div class="item"><input type="button" name="" value="Pause" onclick="Off()" id="Pause"></div>
+
+    </div>
+
+
+    <script>
+
+        const music = new Audio("Demo.mp3");
+        function On() {
+            music.play();
+        }
+        function Off() {
+            music.pause();
+        }
+
+
+    </script>
+</body>
+
+</html>

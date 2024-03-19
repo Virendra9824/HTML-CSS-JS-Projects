@@ -1,0 +1,37 @@
+.mid-right
+{
+    width: 75%;
+    padding: 0px 20px;
+}
+
+.mid-right h2{
+    color: #084a87;
+    padding-bottom: 20px;
+}
+
+.mid-right-inner{
+    display: flex;
+    padding-left: 20px;
+    justify-content: space-around;
+}
+
+.input-right{
+    width: 250px;
+    height: 25px;
+
+}
+
+.Comment{
+    padding-left: 50px;
+}
+
+.right-btn{
+    width: 100px;
+    border-radius: 10px;
+    background: rgb(94, 185, 94);
+    border: none;
+    margin-top: 5px;
+    color: white;
+    height: 40px;
+    font-size: 20px;
+}

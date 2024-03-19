@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accordian using jquery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      background-color: bisque;
+    }
+
+    .faqM {
+      background: #f7faff;
+    }
+
+    .faqMain h1 {
+      color: #0a2134;
+
+      font-size: 44px;
+
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .faqMain p {
+      color: #0a2134;
+
+      font-size: 18px;
+
+      line-height: 27px;
+      /* 150% */
+    }
+
+    .faqitems {
+      margin: auto;
+
+      border: 1px solid #2699fb;
+      margin-bottom: 10px;
+    }
+
+    .faqitems h3 {
+      padding: 10px;
+
+      position: relative;
+      cursor: pointer;
+
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    .faqitems h3 i {
+      position: absolute;
+      right: 10px;
+    }
+
+    .faqitems p {
+      padding: 10px;
+      font-size: 18px;
+      line-height: 25px;
+      display: none;
+    }
+
+    .heading {
+      width: 300px;
+      margin: auto;
+      color: #2699fb;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .main {
+      padding: 40px;
+      background-color: bisque;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="main">
+    <div class="heading">
+      <h1>FAQ using JQuery</h1>
+    </div>
+    <div class="faqitems">
+      <h3>
+        1. What is a class ?
+        <i class="fa-solid fa-plus"></i>
+      </h3>
+      <p>
+        Netflix is a streaming service that offers a wide variety of
+        award-winning TV shows, movies, anime, documentaries and more – on
+        thousands of internet-connected devices. You can watch as much as you
+        want, whenever you want, without a single ad – all for one low monthly
+        price. There's always something new to discover, and new TV shows and
+        movies are added every week!
+      </p>
+    </div>
+    <div class="faqitems">
+      <h3>
+        2. What is Data Abstraction in C++ ?
+        <i class="fa-solid fa-plus"></i>
+      </h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, amet
+        quasi odit ipsam quia blanditiis quidem ad at nihil minima obcaecati
+        dignissimos error tempora vel dolorem. Aut reprehenderit maxime
+        suscipit?
+      </p>
+    </div>
+    <div class="faqitems">
+      <h3>
+        3. What is a default constructor in C++ ?
+        <i class="fa-solid fa-plus"></i>
+      </h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, amet
+        quasi odit ipsam quia blanditiis quidem ad at nihil minima obcaecati
+        dignissimos error tempora vel dolorem. Aut reprehenderit maxime
+        suscipit?
+      </p>
+    </div>
+    <div class="faqitems">
+      <h3>
+        4. What is the use of namespace in C++ ?
+        <i class="fa-solid fa-plus"></i>
+      </h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, amet
+        quasi odit ipsam quia blanditiis quidem ad at nihil minima obcaecati
+        dignissimos error tempora vel dolorem. Aut reprehenderit maxime
+        suscipit?
+      </p>
+    </div>
+  </div>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+  $(".faqitems h3").click(function () {
+    $(this).next().slideToggle();
+    $(this).find("i").toggleClass("fa-minus");
+    $(this).find("i").toggleClass("fa-plus");
+    $(this).parent().siblings().find("p").slideUp();
+    $(this).parent().siblings().find("i").removeClass("fa-minus");
+    $(this).parent().siblings().find("i").addClass("fa-plus");
+  });
+</script>
+
+</html>

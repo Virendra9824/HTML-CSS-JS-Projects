@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabbing</title>
+
+    <style>
+      .tabs {
+        width: 800px;
+        margin: auto;
+        background-color: black;
+        border-radius: 5px 5px 5px 5px;
+      }
+
+      ul#tabs-nav {
+        list-style: none;
+        margin: 0;
+        padding: 5px;
+        overflow: auto;
+      }
+
+      ul#tabs-nav li {
+        float: left;
+        font-weight: bold;
+        margin-right: 2px;
+        padding: 8px 10px;
+        border-radius: 5px 5px 5px 5px;
+        cursor: pointer;
+      }
+
+      ul#tabs-nav li.active {
+        background-color: #09f;
+      }
+
+      #tabs-nav li a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .tab-content {
+        padding: 10px;
+        border: 5px solid black;
+        background-color: #fff;
+      }
+
+      .tab-content p {
+        font-size: 19px;
+        font-weight: 400;
+      }
+
+      body {
+        font-weight: 300;
+        margin: 2em;
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <div class="tabs">
+      <ul id="tabs-nav">
+        <li><a href="#tab1">Home</a></li>
+        <li><a href="#tab2">About</a></li>
+        <li><a href="#tab3">Course</a></li>
+        <li><a href="#tab4">Contact</a></li>
+      </ul>
+
+      <div id="tabs-content">
+        <div id="tab1" class="tab-content">
+          <h2>Home</h2>
+          <p>
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            suscipit est quibusdam provident earum voluptas! Ab, ratione
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            suscipit est quibusdam provident earum voluptas! Ab, ratione
+            temporibus esse commodi velit dolorum quisquam delectus saepe,
+            world, dude. But they don't all bring you lasagna at work. Most of
+            'em just cheat on you."
+          </p>
+        </div>
+
+        <div id="tab2" class="tab-content">
+          <h2>About</h2>
+          <p>
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            suscipit est quibusdam provident earum voluptas! Ab, ratione
+            temporibus esse commodi velit dolorum quisquam delectus saepe, ex
+            atque sapiente, tempora laborum. My friend here's trying to convince
+            me that any indepestroyed by the Rebels."
+          </p>
+        </div>
+
+        <div id="tab3" class="tab-content">
+          <h2>Course</h2>
+          <p>
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            suscipit est qm provident earum voluptas! Ab, ratione
+            temporibus esse commodi velit dolorum quisquam delectus saepe, ex
+            atque sapiente, tempora laborum. In light of this lurid tale, I
+            don't even see how you cao deviant lifestyles."
+          </p>
+        </div>
+
+        <div id="tab4" class="tab-content">
+          <h2>Contact</h2>
+          <p>
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            suscipit est quibusdam provident earum voluptas! Ab, ratione
+            temporibus esse commodi velit dolorum quisquam delectus saepe, ex
+            suscipit est quidi velit dolorum quisquam delectus saepe, ex
+            atques again tonight."
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script>
+    $("#tabs-nav li:first-child").addClass("active");
+    $(".tab-content").hide();
+    $(".tab-content:first").show();
+
+    $("#tabs-nav li").click(function () {
+      $("#tabs-nav li").removeClass("active");
+      $(this).addClass("active");
+      $(".tab-content").hide();
+
+      var activeTab = $(this).find("a").attr("href");
+      $(activeTab).show();
+      return false;
+    });
+  </script>
+</html>

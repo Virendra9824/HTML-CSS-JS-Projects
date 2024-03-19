@@ -1,0 +1,289 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+* a{
+    text-decoration: none;
+}
+
+
+.mid3-main
+{
+    width: 950px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.mid3
+{
+    display: flex;
+    margin-top: 15px;
+    width: 100%;
+    height: 100px;
+}
+
+.mid3 h3{
+    color: #084a87;
+    padding-bottom: 3px;
+}
+
+.mid3-left
+{
+    display: flex;
+    width: 30%;
+}
+
+.mid3-cont{
+    font-size: 13px;
+    justify-content: center;
+
+}
+
+.mid3-inner-div{
+    padding-left: 10px;
+}
+
+.mid3-right
+{
+    display: flex;
+    padding-left: 50px;
+    width: 70%;
+}
+
+.kabra{
+    text-align: right;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+
+.footer
+{
+    width: 100%;
+    height: 370px;
+    background: url("images/footer.png");
+}
+
+.footer-main{
+    width: 1000px;
+    height: 70%;
+    margin: auto;
+    display: flex;
+    font-size: 14px;
+    color: #084986;
+    line-height: 19px;
+}
+
+.footer-main ul{
+    padding-left: 15px;
+}
+
+.footer-main h4{
+    color: red;
+    font-size: 19px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.quick{
+    width: 33%;
+    margin-top: 50px;
+}
+
+.services{
+    width: 33%;
+    margin-top: 50px;
+}
+
+.locations{
+    width: 33%;
+    margin-top: 50px;
+    text-align: right;
+}
+
+.location-border
+{
+    border-right: 1px black solid;
+    padding-right: 4px;
+}
+
+
+
+* a{
+    text-decoration: none;
+}
+
+.main1
+{
+    width: 100%;
+    height: 150px;
+    background: url("images/bg_img.jpg") center  fixed;
+    background-size:contain;
+}
+
+.main1_inner
+{
+    width: 1000px;
+    height: 70%;
+    margin: auto;
+}
+
+.header{
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact
+{
+    height: 100px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
+    color: rgb(0,102,215);
+}
+
+.contact a{
+    color: #09C;
+
+}
+
+.nav
+{
+    /* border: 0.5px solid  #09C; */
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background: url("images/menu_rept.jpg");
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav div{
+    padding-top: 12px;
+    font-size: 18px;
+}
+
+.nav div a{
+    color: black;
+    font-weight: 400;
+}
+
+
+.mid
+{
+    width: 950px;
+    /* height: 800px; */
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.mid-left
+{
+    width: 25%;
+    /* padding-top: 10px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.box-top{
+    border: 1px solid #09C;
+    height: 380px;
+    border-radius: 10px ;
+    background: url("images/leftpanel.png");
+    line-height: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 13px;
+}
+
+.box-top a{
+   color: #084986;
+   font-weight: 600;
+}
+
+.box-down{
+    margin-top: 20px;
+    border: 1px solid #09C;
+    height: 320px;
+    border-radius: 10px ;
+    background: url("images/leftbelow.png") ;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #084986;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.mid3-right
+{
+    display: flex;
+    padding-left: 50px;
+    width: 70%;
+}
+
+.box-top h3, .box-down h3{
+    color: red;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+.mid3-main hr {
+    padding-bottom: 10px;
+    border-top: #09C solid 1px;
+
+}
+
+.mid-right
+{
+    width: 75%;
+}
+
+/* Variable part starts here */
+
+/* .mid-right
+{
+    width: 75%;
+    padding: 0px 20px;
+}
+
+.mid-right h2{
+    color: #084a87;
+    padding-bottom: 20px;
+}
+
+.mid-right-inner{
+    display: flex;
+    padding-left: 20px;
+    justify-content: space-around;
+}
+
+.input-right{
+    width: 250px;
+    height: 25px;
+
+}
+
+.Comment{
+    padding-left: 50px;
+}
+
+.right-btn{
+    width: 100px;
+    border-radius: 10px;
+    background: rgb(94, 185, 94);
+    border: none;
+    margin-top: 5px;
+    color: white;
+    height: 40px;
+    font-size: 20px;
+} */
