@@ -22,5 +22,5 @@ This is clone of IIP Academy website built using HTML, CSS, and JavaScript.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-project.git
+   git clone https://github.com/Virendra9824/HTML-CSS-JS/tree/main/IIP_Academy_Website
    ```
